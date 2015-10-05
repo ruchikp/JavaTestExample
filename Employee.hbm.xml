@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 21, 2015 12:46:49 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Employee" table="employee" catalog="testemployee" optimistic-lock="version">
+        <id name="empId" type="java.lang.Integer">
+            <column name="emp_id" />
+            <generator class="identity" />
+        </id>
+        <property name="empName" type="string">
+            <column name="emp_name" length="20" />
+        </property>
+        <property name="empSalray" type="java.lang.Integer">
+            <column name="emp_salray" />
+        </property>
+    </class>
+</hibernate-mapping>
